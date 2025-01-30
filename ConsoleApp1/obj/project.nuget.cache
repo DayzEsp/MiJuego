@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "LIFVh70BGo4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\usuario\\Desktop\\PRO\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\sixlabors.imagesharp\\3.1.6\\sixlabors.imagesharp.3.1.6.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\spectre.console\\0.49.1\\spectre.console.0.49.1.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\spectre.console.imagesharp\\0.49.1\\spectre.console.imagesharp.0.49.1.nupkg.sha512"
+  ],
+  "logs": []
+}

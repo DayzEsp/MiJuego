@@ -1,4 +1,42 @@
-Un juego hecho con mucho amor sksks , con tematica Fate , disfruten de lo poco que hay . 
+Un juego hecho con mucho amor sksks , con tematica Fate , disfruten de lo poco que hay . Ahora ¿ Cómo se inicia ? 
+Bueno , yo tarbaje en Visual Studio , no VS Code , entonces habrá que crear una carpeta (.vscode) , en la que se agregarán dos archivos :
+
+1 - launch.json // para depurar 
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Ejecutar Proyecto",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/bin/Debug/net7.0/TuProyecto.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    }
+  ]
+}
+
+2 - tasks.json // para compilar
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet build",
+      "type": "shell",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
+
+Ademas , hay que restaurar los paquetes , abriendo una terminal he ingresando dotnet restore , eso restaura las dependencias como spectre.console . Hecho esto solo quedaria compilar.
 
 El proyecto está organizado en varios componentes principales:
 * Board.cs: La clase principal que maneja el tablero de juego
